@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+header {
+    background-color: #192a56;
+    color: #fff;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container{
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.menu-hamburguer{
+    width: 32px; /*usar width em vez de max-width pq eu quero que ele sempre tenha 32 pixels*/
+}
+
+.menu-hamburguer span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin-bottom: 3px;
+}
+
+nav {
+    background-color: #575fcf;
+    display: none;
+    padding: 16px;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#carrossel{
+    margin-bottom: 40px;
+}
+
+#imagem-loja{
+    padding-right: 24px;
+    width: 50%;
+}
+
+.informacao-loja > h2{
+    padding-bottom: 16px;
+}
+
+#em-destaque{
+    margin-top: 40px;
+}
+
+#em-destaque h2{
+    padding-bottom: 16px;
+}
+
+.linha-veiculos{
+    /*Faz com que os itens tenham 5% da distância total entre si*/
+    gap:5%; 
+    margin-bottom: 16px;
+}
+
+.carros{
+    width: 30%;
+}
+
+.carros img{
+    width: 100%;
+}
+
+.carros h3{
+    padding: 2px 0 8px 0;
+}
+
+.carros strong{
+    display: block; /*Faz com que a margem valha -> pesquisar mais sobre*/
+    margin: 12px 0;
+}
+
+button{
+    /*Faz com que o botão fique embaixo do valor, em vez de do lado*/
+    display: block;
+    width: 100%;
+    padding: 6px;
+    background-color: #119759;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+form{
+    display:grid;
+    margin-top: 16px;
+    max-width: 360px;
+}
+
+.label-form{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-form{
+    padding: 8px;
+    margin: 4px 0;
+}
+
+form textarea{
+    resize: none;
+    height: 120px;
+}
+
+form button{
+    max-width: 140px;
+    margin-top: 12px;
+}
+
+footer{
+    margin-top: 40px;
+    background-color: #192a56;
+    color: #fff;
+    padding: 8px;
+}
+
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li{
+    display: inline;
+}
+
+footer li img{
+    height: 32px;
+    margin-right: 3px;
+}
