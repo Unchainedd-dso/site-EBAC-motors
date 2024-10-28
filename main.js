@@ -44,7 +44,11 @@ $(document).ready(function(){
         },
         //substitui o evento padrao que aconteceria pelo especificado dentro dele
         submitHandler: function(form){ 
-            console.log(form)
+            $("#nome").val('')
+            $("#telefone").val('')
+            $("#email").val('')
+            $("#interesse").val('')
+            $("#mensagem").val('')
         },
         //quando o evento atrelado ao formulario nao for valido, uma ação desencadeará a partir dele
         invalidHandler: function(evento, validador){
