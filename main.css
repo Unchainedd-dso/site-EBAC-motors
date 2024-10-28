@@ -168,3 +168,8 @@ footer li img{
     height: 32px;
     margin-right: 3px;
 }
+
+/*Se colocar essa classe, quando o jquery validade der sua mensagem de erro, ela aparecerá vermelha*/
+.error {
+    color: red;
+}
